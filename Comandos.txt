@@ -1,0 +1,56 @@
+//Versão do Git
+git --version
+
+//Realiza a inicialização do repositório na pasta atual
+git init
+
+//Mostra o que está acontecendo no projeto
+git status
+
+//Adiciona o arquivo
+git add ./arquivo.html
+
+//Faz o commit ('a' = tarefa que fez, 'm' = descrição da tarefa)
+git commit -a -m "Descrjção da tarefa"
+
+//Vincula o repositório local com o remoto
+git remote add origin git@github.com:username/reponame.git
+
+//Branch principal do repositório vai se chamar main
+git branch -M main
+
+//Envia o arquivo atual para repositório remoto
+git push -u origin main
+
+//Trocando de branch
+git checkout -b "nome-branch"
+
+//Cria um branch no repositório remoto
+git push --set-upstream origin nome-branch
+
+//Lista todas as branches
+git branch
+
+//Lista todas as branches (incluindo as remotas)
+git branch -va
+
+//Faz um merge
+git merge nome-branch
+
+//Faz um clone local do repositório remoto
+git clone https://github.com/username/reponame.git nome-clone
+
+//Remove arquivos indesejados
+git clean -f
+
+//Remove alterações indesejadas
+git checkout ./index.html
+
+//Mostra os registros de alterações no repositório via terminal
+git log
+
+//Mostra os registros de alterações no repositório via interface
+gitk --all
+
+//Limpa o terminal
+clear
