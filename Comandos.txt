@@ -54,3 +54,45 @@ gitk --all
 
 //Limpa o terminal
 clear
+
+
+
+//Passos a seguir
+
+//Inicializar um repositório Git
+git init
+
+//Adicionar um repositório remoto
+git remote add origin https://github.com/username/reponame
+
+//Obter as alterações do repositório remoto
+git fetch origin
+
+//Mesclar as alterações obtidas do repositório remoto com o seu branch atual
+git merge --ff-only origin/main
+
+//Criar e mudar para um novo branch chamado dev-branch
+git checkout -b dev-branch
+
+//Fazer as alterações necessárias nos arquivos do projeto.
+
+//Adicionar todas as alterações ao índice do Git:
+git add .
+
+//Criar um commit com as alterações adicionadas ao índice
+git commit -m "Mensagem do commit"
+
+//Enviar as alterações do branch local para o repositório remoto:
+git push origin dev-branch
+
+//Abrir um pull request para mesclar as alterações do dev-branch para o branch principal (por exemplo, master ou main) através da plataforma de hospedagem do seu repositório Git.
+
+//Limpar o branch dev-branch após a conclusão do pull request (após a mesclagem)
+git checkout main
+git branch -d dev-branch
+
+//Mostra os registros de alterações no repositório via interface
+gitk --all
+
+//Limpa o terminal
+clear
