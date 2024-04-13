@@ -46,8 +46,14 @@ git clean -f
 //Remove alterações indesejadas
 git checkout ./index.html
 
+//Armazena temporariamente mudanças locais sem comprometer ou perder essas mudanças
+git stash
+
 //Mostra os registros de alterações no repositório via terminal
 git log
+
+//Mostra os registros de alterações em uma única linha, exibindo apenas o hash do commit
+git log --oneline
 
 //Mostra os registros de alterações no repositório via interface
 gitk --all
