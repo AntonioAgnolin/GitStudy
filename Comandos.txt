@@ -4,7 +4,9 @@
 git init
 
 //Adicionar um repositório remoto
-git remote add origin https://github.com/username/reponame
+git remote add origin git@github.com:username/reponame.git
+
+//Ou https://github.com/username/reponame, caso opte por utilizar HTTPS
 
 //Obter as alterações do repositório remoto
 git fetch origin
@@ -90,7 +92,7 @@ git branch -va
 git merge nome-branch
 
 //Faz um clone local do repositório remoto
-git clone https://github.com/username/reponame.git nome-clone
+git clone git@github.com:username/reponame.git nome-clone
 
 //Remove arquivos indesejados
 git clean -f
